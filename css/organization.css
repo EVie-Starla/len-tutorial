@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* ||RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    font:inherit;
+}
+
+/*||VARIABLES */
+:root{
+    /* COLORS */
+    --HEADER-BGCOLOR:rgb(77, 75, 75);
+    --HEADER-COLOR:whitesmoke;
+}
+
+/* || GENERAL STYLES */
+html{
+    font-size: 2.5rem;
+    font-family: "Nunito",sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+/*||BLOCKS */
+.header{
+    background-color: var(--HEADER-BGCOLOR);
+    color: whitesmoke;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0.5rem 1rem ;
+}
+
+
+/* ELEMENTS */
+.header__nav{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.header__btn{
+    height: 100px;
+    width: 100px;
+    margin: .2rem;
+    border-radius: 20%;
+}
+
+/* || Blocks with MODIFIERS */
+.header--border-lg{
+    border: 5px solid palevioletred;
+}
+
+/* || Elements with MODIFIERS */
+.header__btn--secondary{
+    background-color: yellow;
+}
+.header__btn--lean{
+    transform: skewX(10deg);
+}
+.header__btn--rotate{
+    transform: rotateX(92deg);
+}
+

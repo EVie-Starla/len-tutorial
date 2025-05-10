@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>login</title>
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Login Page</h1>
+        <form action="/action_page.php">
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" placeholder="Your Name" required autofocus><br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%&*]).{8,}" title="Password must contain 8 characters or more with atleast 1 uppercase letter,1 lowercase letter and 1 special character"><br><br>
+            <button type="submit">Login</button>
+        </form>
+    </body>
+</html>
